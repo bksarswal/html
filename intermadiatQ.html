@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Intermediate Questions</h1>
+
+<h2> 1. What are the differences between inline, block, and inline-block elements?</h2>
+
+<pre>
+    Inline: Elements that do not start on a new line and take up only as much width as necessary (e.g., <.a>, <.span>).
+    Block: Elements that start on a new line and take up the full width available (e.g., <.div>, <.p>).
+    Inline-block: Combines inline and block features; elements appear inline but can set width and height.</pre> 
+
+<h2>2. How do you make a webpage mobile-friendly?</h2>
+
+<pre>
+    Use the <.meta> viewport tag:
+html
+Copy code
+ <Strong> <.meta name="viewport" content="width=device-width, initial-scale=1.0"></Strong>
+Use responsive web design with CSS media queries.
+Use flexible layouts with percentages and relative units like em, rem, and vw/vh.
+Use responsive images with the srcset attribute or CSS properties.
+</pre>
+
+ <h2>3. What is the difference between id and class attributes?</h2>
+
+<pre>id: Unique identifier for a single element. Example: <.div id="header">.
+    class: Can be applied to multiple elements for grouping. Example: <.div class="container">.</pre>
+
+<h2>4. What is the difference between HTML5 and earlier versions of HTML?</h2>
+
+<pre>HTML5 introduced:
+    Semantic tags (<.article>, <.aside>, <.section>, etc.).
+    Multimedia support with <.audio> and <.video> tags.
+    Forms with attributes like required, placeholder, and new input types (email, date, etc.).
+    Support for local storage (localStorage and sessionStorage).</pre>
+
+<h2>5. How does the <.canvas> tag work in HTML5?</h2>
+
+<pre><.canvas> is used for rendering graphics, animations, and charts via JavaScript.
+    html
+    Copy code
+    <.canvas id="myCanvas" width="200" height="100"></.canvas>
+    JavaScript Example:
+    javascript
+    Copy code
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(50, 50, 100, 50);</pre>
+</body>
+</html>

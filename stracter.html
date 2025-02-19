@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+
+    <h1>Structural Tage</h1>
+
+
+   <.pre> In HTML5, structural tags (also known as semantic tags) are used to define
+     the structure and layout of a web page more clearly. These tags provide meaning 
+     to the content within them, improving accessibility, readability,
+      and search engine optimization (SEO).
+
+<h2>Common Structural Tags in HTML5</h2>
+<h3><.header></h3>
+Represents the introductory content or a group of .navigational links.
+Typically contains:
+Logo
+Main heading
+.Navigation menu
+html
+Copy code
+
+<.header>
+    <.h1>Website Title</.h1>
+    <.nav>
+        <.a href="#">Home</.a>
+        <.a href="#">About</.a>
+        <.a href="#">Contact</.a>
+    </.nav>
+</.header>
+ 
+<h1><.nav></h1>
+Represents a section of the page for .navigation links.
+html
+Copy code
+<.nav>
+    <.ul>
+        <..li><.a href="#home">Home</.a></.li>
+        <..li><.a href="#services">Services</.a></.li>
+        <..li><.a href="#contact">Contact</.a></.li>
+    </.ul>
+</.nav>
+<h1><.main></h1>
+
+Represents the main content of the document, which is unique to the page.
+There sho.uld only be one <.main> element per page.
+html
+Copy code
+<.main>
+    <.h2>Main Content</h2>
+    <..p>This is the central part of the webpage.</.p>
+</main>
+<h1><.section></h1>
+
+Represents a thematic grouping of content, typically with a heading.
+Can contain m.ultiple subsections.
+html
+Copy code
+<.section>
+    <.h2>About Us</.h2>
+    <,.p>We provide top-quality services.<./.p>
+</.section>
+<h1><.article></h1>
+
+Represents self-contained content that can stand independently.
+Often used for blog posts, news articles, or other standalone content.
+html
+Copy code
+<.article>
+    <.h2>Blog Post Title</.h2>
+    <..p>This is an individu.al article.</.p>
+</.article>
+<h1><.aside></h1>
+
+Represents content that is tangentially related to the main content, such as a sidebar or advertisements.
+html
+Copy code
+<.aside>
+    <.h3>Related Links</.h3>
+    <.ul>
+        <..li><.a href="#">Link 1</.a></.li>
+        <..li><.a href="#">Link 2</.a></.li>
+    </.ul>
+</.aside>
+<h1><.footer></h1>
+
+Represents the footer of a document or section.
+Typically contains:
+Copyright information
+Links to privacy policy or terms of service
+Contact details
+html
+Copy code
+<.footer>
+    <..p>&copy; 2025 My Website. All rights reserved.</.p>
+</.footer>
+
+<h1><.figure> and <.figcaption></h1>
+Used for self-contained content, such as images, diagrams, or illustrations, with an optional caption.
+html
+Copy code
+<.figure>
+    <.img src="image.jpg" alt="Description of image">
+    <.figcaption>Image Caption</.figcaption>
+</.figure>
+<div>
+
+A general-purpose container, often used for grouping content.
+Unlike semantic tags, <div> has no inherent meaning.
+html
+Copy code
+<div class="container">
+    <..p>Content goes here.</.p>
+</div>
+Example of Structural Tags in a Web Page
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Structure</title>
+</head>
+<body>
+    <.header>
+        <.h1>Website Title</.h1>
+        <.nav>
+            <.a href="#home">Home</.a>
+            <.a href="#about">About</.a>
+            <.a href="#contact">Contact</.a>
+        </.nav>
+    </.header>
+
+    <.main>
+        <.section>
+            <h2>Welcome</h2>
+            <..p>This is the main section of the webpage.</.p>
+        </section>
+
+        <.article>
+            <h2>Latest News</h2>
+            <..p>Here's the latest update on our services.</.p>
+        </article>
+
+        <.aside>
+            <h3>Quick Links</h3>
+            <.ul>
+                <..li><.a href="#faq">FAQ</.a></.li>
+                <..li><.a href="#support">Support</.a></.li>
+            </.ul>
+        </aside>
+    </main>
+
+    <footer>
+        <..p>&copy; 2025 My Website. All rights reserved.</.p>
+    </footer>
+</body>
+</html>
+Advantages of Structural Tags
+Improved Readability:
+
+Clear structure makes HTML easier to understand and maintain.
+Better Accessibility:
+
+Screen readers can better interpret the content when semantic tags are used.
+Enhanced SEO:
+
+Search engines prioritize semantic structures for ranking.
+Reduced Need for Extra Classes:
+
+Semantic tags inherently describe their purpose, reducing reliance on additional class names for styling.
+
+</body>
+</html>

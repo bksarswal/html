@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>what is attribute</h1>
+    <pre>
+        
+        
+Attributes in HTML are additional information provided within tags to define the properties or behavior of an HTML element. They modify or customize how an element should behave or be displayed.
+<h2>
+    Key Points About Attributes:</h2>
+Syntax: Attributes are specified within the opening tag of an HTML element.
+html
+Copy code
+<.element attribute="value">Content<./element>
+Case Insensitivity: Attribute names are not case-sensitive (id and ID are treated the same), but lowercase is recommended for consistency.
+Key-Value Pair: Attributes are written as key-value pairs, where the key is the attribute name and the value specifies the property.
+<h2>Commonly Used HTML Attributes</h2>
+<b>Attribute </b>     <b>   Description	</b>                   <b> Example</b>
+
+id	  Specifies a unique identifier for an element.	<.div id="uniqueDiv"><./.div>
+class	Defines one or more class names for styling.	<.p class="text-style"></.p>
+style	Applies inline CSS styles to an element.	<.p style="color: red;">Red Text</.p>
+title	Adds a tooltip text when hovered over.	<.button title="Click me!">.Button</.button>
+href	Specifies the URL for links.	<.a href="https://example.com">Link<./a>
+src	 Specifies the source for media (images, videos).	<.img src="image.jpg" alt="Image">
+alt	Provides alternative text for images.	<.img src="image.jpg" alt="Image description">
+type	Specifies the type of input or .button.	<.input type="text">
+value	Specifies the initial value of an input field.	<.input type="text" value="Default">
+placeholder	Provides placeholder text for input fields.	<.input type="text" placeholder="Enter text">
+<h2>Global Attributes</h2>
+
+Global attributes can be used with any HTML element.
+
+<b>Attribute </b>     <b>   Description	</b>                   <b> Example</b>
+id	Specifies a unique identifier.	<.div id="header"></.div>
+class	Defines CSS classes.	<.p class="highlight"></.p>
+style	Adds inline styles.	<.span style="font-size: 16px;"></.span>
+title	Adds tooltip information.	<.div title="Information"></.div>
+data-*	Adds custom data attributes for JavaScript.	<.div data-user-id="123"></.div>
+hidden	Hides an element from the view but keeps it in the DOM.	<.div hidden>Hidden Content</.div>
+tabindex	Specifies the tab order of an element.	<.button tabindex="1">Click</.button>
+aria-*	Adds accessibility properties (ARIA attributes).	<.button aria-label="Close">X</.button>
+<h2>Boolean Attributes</h2>
+Boolean attributes represent a true/false state. They don’t require a value, but specifying them implies "true."
+
+<b>Attribute </b>     <b>   Description	</b>                   <b> Example</b>
+checked	Marks a checkbox or radio as checked.	<.input type="checkbox" checked>
+disabled	Disables an input or .button.	<.button disabled>Submit</.button>
+readonly	Makes an input field read-only.	<.input type="text" readonly>
+required	Makes an input field mandatory.	<.input type="text" required>
+autofocus	Automatically focuses an input field.	<.input type="text" autofocus>
+hidden    	Hides the element.	<.div hidden></.div>
+Custom      Data Attributes (data-*)
+Custom      attributes prefixed with data- are used to store additional information in an element.
+
+Example:
+
+html
+Copy code
+<.div data-user-id="123" data-role="admin"></.div>
+<.script>
+  const userId = document.querySelector('div').dataset.userId;
+  console.log(userId); // Output: 123
+</.script>
+Best Practices for Using Attributes
+Use Semantic Attributes: Apply attributes that are meaningful and improve accessibility.
+Avoid Inline Styles: Use CSS for styling instead of the style attribute.
+Organize Classes: Use de.scriptive and reusable class names.
+Validate Inputs: Use attributes like required, maxlength, and pattern for form validation.
+    </pre>
+</body>
+</html>

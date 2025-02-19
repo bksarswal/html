@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> Advanced Questions</h1>
+    <h2>1. What are custom data attributes in HTML?</h2>
+   <pre> 
+    Custom attributes start with data- and store extra data on HTML elements.
+    html
+    Copy code
+    <.div data-user-id="12345"><./div>
+    Access using JavaScript:
+    javascript
+    Copy code
+    const userId = document.querySelector('div').dataset.userId;
+    console.log(userId); // Output: 12345</pre>
+
+    <h2>2. What is the difference between <.script> and <.script async>?</h2>
+    
+   <pre> <.script>: The browser loads and executes the script immediately, blocking rendering.
+    <.script async>: The script loads and executes asynchronously, without blocking rendering.</pre>
+
+    <h2>3. What is the purpose of the <.link> tag in HTML?</h2>
+    
+    <pre>The <.link> tag connects external resources to the HTML document, such as stylesheets or icons. Example:
+        html
+        Copy code
+        <strong> <.link rel="stylesheet" href="styles.css"></strong>
+       </pre>
+    <h2>4. What is ARIA in HTML?</h2>
+    
+   <pre>
+     ARIA (Accessible Rich Internet Applications) attributes improve accessibility for people using assistive technologies. Example:
+    html
+    Copy code
+    <.button aria-label="Close menu">X<./button></pre>
+    <h2>5. How can you improve the performance of an HTML page?</h2>
+    
+   <pre> Minimize and compress CSS, JavaScript, and HTML files.
+    Use lazy loading for images and iframes (loading="lazy").
+    Use content delivery networks (CDNs) for external resources.
+    Optimize images using modern formats like WebP.</pre>
+     
+</body>
+</html>
